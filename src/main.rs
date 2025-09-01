@@ -7,5 +7,10 @@ use std::env;
 
 fn main() {
     let args: Vec<String> = env::args().collect();
-    println!("{:?}", args);
+
+    let query: &String = &args[1];
+    let filename: &String = &args[2];
+
+    println!("Searching for {}", query);
+    println!("in file {}", filename);
 }
